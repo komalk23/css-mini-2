@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("Pastel\ Sakura\ Floral\ Frame.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #44313a;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 7%;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #a53d63;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #57313f;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d94f83;
+}
+
+.cart {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #8f3657;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #805363;
+}
+
+.product-card {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.94);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    text-align: left;
+    box-shadow: 0 10px 35px rgba(150, 70, 100, 0.15);
+    transition: 0.4s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-image {
+    flex: 1;
+    height: 340px;
+    background: #fce1e8;
+    border-radius: 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    transition: 0.4s;
+}
+
+.product-image img:hover {
+    transform: scale(1.08);
+}
+
+h2 {
+    font-size: 28px;
+    margin: 12px 0;
+    color: #482432;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #765663;
+}
+
+.rating {
+    margin: 18px 0;
+    color: #f3a51c;
+}
+
+.rating span {
+    color: #563b46;
+    font-size: 14px;
+}
+
+hr {
+    border: none;
+    border: 1px solid #f2dce4;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.new-price {
+    font-size: 30px;
+    font-weight: bold;
+    color: #c83d70;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 17px;
+}
+
+.discount {
+    background: #fce1e8;
+    color: #c83d70;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cart-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #d94f83;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart-btn:hover {
+    background: #a83261;
+    transform: scale(1.03);
+}
+
+.delivery {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #805363;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #805363;
+}
+
+@media screen and (max-width: 650px) {
+
+    header {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .product-card {
+        flex-direction: column;
+        padding: 18px;
+        gap: 22px;
+    }
+
+    .product-image {
+        width: 100%;
+        height: 280px;
+    }
+
+    .product-details {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .price {
+        flex-wrap: wrap;
+    }
+
+}
